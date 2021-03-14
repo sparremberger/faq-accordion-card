@@ -1,0 +1,201 @@
+body {
+  background-color: rgb(175, 104, 234);
+  background: linear-gradient(rgb(175, 104, 234), rgb(100, 98, 231));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-width: 375px; */
+}
+.card {
+  border-radius: 20px;
+  width: 62vw;
+  min-width: 730px;
+  height: 450px;
+  /*width:62vw;
+    height:65vh;*/
+  background-color: white;
+}
+
+.texto {
+  font-family: Kumbh Sans;
+  color: rgb(31, 29, 52);
+}
+
+#titulo {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.texto-card {
+  position: relative;
+
+  font-size: 14px;
+  width: 40vw;
+  min-width: 295px;
+  max-width: 315px;
+  float: right;
+  /*width: min-content;
+  white-space: nowrap;*/
+  margin-right: 5%;
+  top: 5%;
+}
+
+#woman { /* Esse seletor tem como alvo a >img< da mulher e serve para
+            por um offset de maneira que ela fique para fora da div
+            container, de maneira que nesta div o overflow: hidden esconda-a. */
+  position: relative;
+  left: -15%;
+  width: 90%;
+}
+
+#box {
+  position: relative;
+  width: 90%;
+  bottom: -120px;
+  right: 100px;
+}
+
+p {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.illustration-woman-desktop {
+  position: absolute;
+  padding-top: 10vh;
+  overflow: hidden;
+}
+
+.illustration-box-desktop {
+  position: absolute;
+  padding-top: 10vh;
+}
+
+hr { 
+  /* Esse é o padrão pra ficar 1px de espessura */
+  height: 1px;
+  border: none;
+  background: linear-gradient(
+    to right,
+    rgba(214, 214, 214, 0),
+    rgb(214, 214, 214),
+    rgba(214, 214, 214, 0)
+  );
+  margin-top:15px;
+  clear: both; /* Não faz nada nesse contexto, mas é bom lembrar que essa funcionalidade existe. */
+}
+
+.expand {
+  font-size: 12px;
+  margin:0;
+  color: grey;
+}
+
+#text-1,
+#text-2,
+#text-3,
+#text-4,
+#text-5 {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.button {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 e IE 11 */
+  user-select: none;
+  margin-bottom:8px;
+}
+
+.button:hover {
+  color: tomato;
+}
+
+@media (max-width: 470px) {
+  /* ou podia ser 767 */
+  #titulo {
+    text-align: center;
+  }
+
+  .card {
+    height: 450px;
+    min-width: 300px;
+    width: 100px;
+  }
+
+  .texto-card {
+    margin-right: 5px;
+    padding: 0;
+    min-width: 280px;
+    width: 100px;
+    top: -130px;
+  }
+
+  .illustration-woman-desktop {
+    position: relative;
+    width: 210px;
+    padding: 0px;
+    margin: 0px;
+    left: 45px;
+    top: -95px;
+  }
+
+  #woman {
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+
+  #box {
+    position: relative;
+    width: 40%;
+    bottom: 265px;
+    left: 40px;
+  }
+
+  #titulo {
+    position: relative;
+    top: 20px;
+  }
+}
+
+/* W3 SCHOOLS CSS ARROWS */
+.arrow {
+  border: solid tomato;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
